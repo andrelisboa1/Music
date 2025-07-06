@@ -13,6 +13,7 @@
     --font-header: "Playfair Display SC", serif;
 
     --nav-height: 5vh;
+    --nav-inner-hpadding: 3pt;
 
     background-color: var(--color-background);
     color: var(--color-main);
@@ -47,7 +48,11 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    
+    padding-left: var(--nav-inner-hpadding);
+    padding-right: var(--nav-inner-hpadding);
+
+    width: calc(100% - 2*var(--nav-inner-hpadding));
     height: var(--nav-height);
     z-index: 1000;
 
