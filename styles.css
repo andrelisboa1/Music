@@ -66,4 +66,9 @@ main {
 
     font-family: var(--font-header);
     font-size: calc(var(--nav-height) * 0.5);
+
+    padding-right: var(--nav-inner-hpadding);
+    border-right: 1pt solid var(--color-accent);
+
+    height: 100%;
 }
