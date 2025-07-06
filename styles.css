@@ -1,0 +1,10 @@
+* {
+    --color-background: #222;
+    --color-main: #e5e5e5;
+    --color-secondary: #b0a990;
+    --color-accent: #8c6f4a;
+    --color-error: #c0392b;
+
+    background-color: var(--color-background);
+    color: var(--color-main);
+}

@@ -42,3 +42,5 @@ function changeMain(filename) {
 window.onload = function() {
     changeMain("m_main.html");
 }
+
+// Reminder to self: use CTRL + SHIFT + R to clear cache first.
