@@ -129,6 +129,8 @@ main {
 
 .text-section {
     border-left: 4pt solid var(--color-accent);
-    padding-left: 2pt;
+    padding-left: 4pt;
+    padding-top: 4pt;
+    padding-bottom: 4pt;
     margin-bottom: 2pt;
 }
