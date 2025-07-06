@@ -45,7 +45,7 @@ h3 {
     margin-top: 2vh !important;
     margin-bottom: 0.5vh !important;
     border-bottom: 1pt solid var(--color-accent);
-    height: var(--h3-font-size);
+    height: calc(var(--h3-font-size) + 2pt);
 }
 
 div {
