@@ -32,6 +32,13 @@ function changeMain(filename) {
             let m = document.getElementById("main-sec");
             console.log(content);
             m.innerHTML = content;
+            let link = document.querySelector('link[rel="stylesheet"][href$="styles.css"]');
+            if (!link) {
+                link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = 'styles.css';
+                document.head.appendChild(link);
+            }
         })
         .catch(error => {
             let m = document.getElementById("main-sec");
