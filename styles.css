@@ -3,8 +3,8 @@
 
 * {
     --color-background: #222;
-    --color-background-even: #553;
-    --color-background-odd: #442;
+    --color-background-even: #331;
+    --color-background-odd: #220;
     --color-nav-background: #111;
     --color-main: #e5e5e5;
     --color-secondary: #b0a990;
@@ -149,6 +149,9 @@ main {
     margin-top: 1pt;
     margin-bottom: 1pt;
     background-color: var(--color-background-even);
+    padding-left: 2pt;
+    padding-top: 2pt;
+    padding-bottom: 2pt;
 }
 
 
