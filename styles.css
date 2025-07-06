@@ -11,6 +11,7 @@
 
     --font-main: Prata, serif;
     --font-header: "Playfair Display SC", serif;
+    --text-header-size: 4vh;
 
     --nav-height: 5vh;
     --nav-inner-hpadding: 6pt;
@@ -22,17 +23,34 @@
 }
 
 h1 {
-    font-size: 4vh !important;
+    font-size: var(--text-header-size) !important;
     font-weight: normal !important;
     font-family: var(--font-header) !important;
-    
+
     color: var(--color-main);
 }
 
 h2 {
-    font-size: 2.5vh !important;
+    font-size: calc(var(--text-header-size) * 0.625) !important;
     font-weight: normal !important;
     color: var(--color-main);
+}
+
+h3 {
+    font-size: calc(var(--text-header-size) * 0.5) !important;
+    font-weight: normal !important;
+    color: var(--color-secondary);
+    font-family: var(--font-main) !important;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+div {
+    font-size: calc(var(--text-header-size) * 0.4);
+    font-weight: normal !important;
+
+    color: var(--color-main);
+    font-family: var(--font-main) !important;
 }
 
 main {
@@ -48,7 +66,7 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    
+
     padding-left: var(--nav-inner-hpadding);
     padding-right: var(--nav-inner-hpadding);
 
@@ -77,4 +95,35 @@ main {
 
     display: flex;
     align-items: center;
+}
+
+.nav-link {
+    background-color: var(--color-nav-background);
+    color: var(--color-main);
+
+    font-family: var(--font-main);
+    font-size: calc(var(--nav-height) * 0.4);
+
+    padding: 0 var(--nav-inner-hpadding);
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    border: none;
+    border-right: 1pt solid var(--color-secondary);
+    transition: background 0.2s, color 0.2s;
+
+    cursor: pointer;
+}
+
+.nav-link:last-child {
+    border-right: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color: var(--color-accent);
+    color: var(--color-background);
 }
