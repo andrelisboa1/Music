@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
 * {
     --color-background: #222;
@@ -8,7 +8,8 @@
     --color-accent: #8c6f4a;
     --color-error: #c0392b;
 
-    --font-main: Prata sans-serif;
+    --font-main: Prata serif;
+    --font-header: "Playfair Display SC" serif;
 
     background-color: var(--color-background);
     color: var(--color-main);
@@ -19,11 +20,13 @@
 h1 {
     font-size: 18pt !important;
     font-weight: normal !important;
+    font-family: var(--font-header);
+    
     color: var(--color-main);
 }
 
 h2 {
     font-size: 16pt !important;
     font-weight: normal !important;
-    color: var(--color-secondary);
+    color: var(--color-main);
 }
