@@ -58,6 +58,8 @@ main {
 
     background-color: var(--color-nav-background);
     border-bottom: 1pt solid var(--color-secondary);
+
+    box-shadow: 0 2px 8px 0 var(--color-secondary);
 }
 
 .nav-header {
