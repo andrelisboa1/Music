@@ -42,7 +42,7 @@ h3 {
     color: var(--color-secondary);
     font-family: var(--font-main) !important;
     margin-top: 2vh;
-    margin-bottom: 1vh;
+    margin-bottom: 0.5vh;
 }
 
 div {
