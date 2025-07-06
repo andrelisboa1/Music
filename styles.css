@@ -71,4 +71,5 @@ main {
     border-right: 1pt solid var(--color-accent);
 
     height: 100%;
+    line-height: 100%;
 }
