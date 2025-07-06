@@ -1,5 +1,5 @@
 function readFromGithubFile(filename) {
-    let prefix = "raw.githubusercontent.com/andrelisboa1/Music/refs/heads/main/";
+    let prefix = "raw.githubusercontent.com/andrelisboa1/Music/main/";
 
     let content = "";
 
