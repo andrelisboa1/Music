@@ -85,11 +85,11 @@ main {
     background-color: var(--color-nav-background);
     color: var(--color-main);
 
-    font-family: var(--font-header);
+    font-family: var(--font-header) !important;
     font-size: calc(var(--nav-height) * 0.5);
 
     padding-right: var(--nav-inner-hpadding);
-    border-right: 1pt solid var(--color-accent);
+    border-right: 2pt solid var(--color-accent);
 
     height: 100%;
 
@@ -111,7 +111,6 @@ main {
     align-items: center;
 
     text-decoration: none;
-    border: none;
     border-right: 1pt solid var(--color-secondary);
     transition: background 0.2s, color 0.2s;
 
