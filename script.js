@@ -26,6 +26,18 @@ function debugRead(filename) {
         });
 }
 
+function changeMain(filename) {
+    readFromGithubFile(filename)
+        .then(content => {
+            let m = document.getElementById("main-sec");
+            m.innerHTML = setHTMLFromString(m, content);
+        })
+        .catch(error => {
+            let m = document.getElementById("main-sec");
+            m.innerHTML = `<h1>ERROR!</h1><h2>Details follow:</h2><textarea>${error}</textarea>`
+        });
+}
+
 window.onload = function() {
-    debugRead("m_main.html");
+    changeMain("m_main.html");
 }
