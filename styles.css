@@ -142,3 +142,8 @@ main {
     padding-bottom: 4pt;
     margin-bottom: 2pt;
 }
+
+.text-section > div {
+    margin-top: 1pt;
+    margin-bottom: 1pt;
+}
