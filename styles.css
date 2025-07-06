@@ -20,6 +20,11 @@
     color: var(--color-main);
 
     font-family: var(--font-main);
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 h1 {
@@ -49,7 +54,7 @@ h3 {
 }
 
 div {
-    font-size: calc(var(--text-header-size) * 0.4);
+    font-size: calc(var(--text-header-size) * 0.45);
     font-weight: normal !important;
 
     color: var(--color-main);
