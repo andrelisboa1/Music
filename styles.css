@@ -65,4 +65,5 @@ main {
     color: var(--color-main);
 
     font-family: var(--font-header);
+    font-size: 3vh;
 }
