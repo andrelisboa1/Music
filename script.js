@@ -31,7 +31,7 @@ function changeMain(filename) {
         .then(content => {
             let m = document.getElementById("main-sec");
             // convert to string...
-            m.innerHTML = setHTMLFromString(m, `${content}`);
+            setHTMLFromString(m, `${content}`);
         })
         .catch(error => {
             let m = document.getElementById("main-sec");
