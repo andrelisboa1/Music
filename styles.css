@@ -15,3 +15,15 @@
 
     font-family: var(--font-main);
 }
+
+h1 {
+    font-size: 18pt !important;
+    font-weight: normal !important;
+    color: var(--color-main);
+}
+
+h2 {
+    font-size: 16pt !important;
+    font-weight: normal !important;
+    color: var(--color-secondary);
+}
