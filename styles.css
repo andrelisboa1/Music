@@ -59,7 +59,23 @@ main {
     background-color: var(--color-nav-background);
     border-bottom: 1pt solid var(--color-secondary);
 
-    box-shadow: 0 2px 8px 0 var(--color-secondary);
+    /*
+        The `box-shadow` property applies shadow effects around an element's frame. 
+        It accepts several parameters, which can be specified as follows:
+
+        box-shadow: [offset-x] [offset-y] [blur-radius] [spread-radius] [color] [inset];
+
+        Parameters:
+            - offset-x:    Required. The horizontal distance of the shadow. Positive values place the shadow to the right of the element, negative to the left.
+            - offset-y:    Required. The vertical distance of the shadow. Positive values place the shadow below the element, negative above.
+            - blur-radius: Optional. The blur distance; the higher the value, the more blurred the shadow. Default is 0 (sharp shadow).
+            - spread-radius: Optional. The size of the shadow. Positive values cause the shadow to expand and grow bigger, negative values shrink it.
+            - color:       Optional. The color of the shadow. If omitted, the browser uses the current color of the element.
+            - inset:       Optional. Changes the shadow from an outer shadow (default) to an inner shadow.
+
+        Multiple shadows can be applied by separating each shadow with a comma.
+    */
+    box-shadow: 0 0.5vh 1vh 0 var(--color-secondary);
 }
 
 .nav-header {
