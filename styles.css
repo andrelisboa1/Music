@@ -126,3 +126,9 @@ main {
     background-color: var(--color-accent);
     color: var(--color-background);
 }
+
+.text-section {
+    border-left: 4pt solid var(--color-accent);
+    padding-left: 2pt;
+    margin-bottom: 2pt;
+}
