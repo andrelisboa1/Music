@@ -30,7 +30,7 @@ function changeMain(filename) {
     readFromGithubFile(filename)
         .then(content => {
             let m = document.getElementById("main-sec");
-            m.innerHTML = setHTMLFromString(m, content);
+            m.innerHTML = setHTMLFromString(m, `${content}`);
         })
         .catch(error => {
             let m = document.getElementById("main-sec");
