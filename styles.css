@@ -18,8 +18,8 @@
 }
 
 h1 {
-    font-size: 18pt !important;
-    font-weight: normal !important;
+    font-size: 22pt !important;
+    font-weight: bold !important;
     font-family: var(--font-header) !important;
     
     color: var(--color-main);
