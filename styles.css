@@ -3,8 +3,8 @@
 
 * {
     --color-background: #222;
-    --color-background-even: #332;
-    --color-background-odd: #331;
+    --color-background-even: #221;
+    --color-background-odd: #220;
     --color-nav-background: #111;
     --color-main: #e5e5e5;
     --color-secondary: #b0a990;
@@ -146,12 +146,14 @@ main {
 }
 
 .text-section > div {
-    margin-top: 1pt;
-    margin-bottom: 1pt;
+    margin-top: 2pt;
+    margin-bottom: 2pt;
     background-color: var(--color-background-even);
     padding-left: 2pt;
     padding-top: 2pt;
     padding-bottom: 2pt;
+
+    border-bottom: 1pt solid var(--color-accent);
 }
 
 
