@@ -150,10 +150,10 @@ main {
     margin-bottom: 3pt;
     background-color: var(--color-background-even);
     padding-left: 2pt;
-    padding-top: 2pt;
-    padding-bottom: 2pt;
+    padding-top: 4pt;
+    padding-bottom: 4pt;
 
-    border-top: 1pt solid var(--color-secondary);
+    border-top: 0.5pt solid var(--color-secondary);
     border-bottom: 1pt solid var(--color-accent);
 }
 
