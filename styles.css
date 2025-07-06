@@ -8,8 +8,8 @@
     --color-accent: #8c6f4a;
     --color-error: #c0392b;
 
-    --font-main: Prata serif;
-    --font-header: "Playfair Display SC" serif;
+    --font-main: Prata, serif;
+    --font-header: "Playfair Display SC", serif;
 
     background-color: var(--color-background);
     color: var(--color-main);
@@ -20,7 +20,7 @@
 h1 {
     font-size: 18pt !important;
     font-weight: normal !important;
-    font-family: var(--font-header);
+    font-family: var(--font-header) !important;
     
     color: var(--color-main);
 }
