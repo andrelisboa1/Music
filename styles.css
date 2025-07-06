@@ -75,7 +75,7 @@ main {
 
         Multiple shadows can be applied by separating each shadow with a comma.
     */
-    box-shadow: 0 0.5vh 1vh 0 var(--color-secondary);
+    box-shadow: 0 0.5vh 0.5vh 0 var(--color-secondary);
 }
 
 .nav-header {
