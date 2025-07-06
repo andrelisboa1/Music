@@ -22,7 +22,7 @@
 }
 
 h1 {
-    font-size: 4.5vh !important;
+    font-size: 4vh !important;
     font-weight: normal !important;
     font-family: var(--font-header) !important;
     
@@ -30,7 +30,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3vh !important;
+    font-size: 2.5vh !important;
     font-weight: normal !important;
     color: var(--color-main);
 }
