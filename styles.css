@@ -156,8 +156,9 @@ main {
     padding-top: 6pt;
     padding-bottom: 4pt;
 
-    border-top: 0.5pt solid var(--color-secondary);
-    border-bottom: 1pt solid var(--color-accent);
+    border-left: 0.5pt solid var(--color-secondary);
+    border-top: 1pt solid var(--color-secondary);
+    border-bottom: 1.5pt solid var(--color-accent);
 }
 
 .text-section>div:nth-child(odd) {
