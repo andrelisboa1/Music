@@ -41,6 +41,7 @@ function changeMain(filename) {
                 link.href = 'styles.css';
                 document.head.appendChild(link);
             }
+            document.body.dispatchEvent(onload);
         })
         .catch(error => {
             let m = document.getElementById("main-sec");
