@@ -52,11 +52,7 @@ function changeMain(filename, runExtras=function(){}) {
 function getJSONObject(filename) {
 	return readFromGithubFile(filename)
         .then(content => {
-            console.log("CONTENT DETECTED:");
-            console.log(content);
             let parsedJSON = JSON.parse(content);
-            console.log("PARSED INTO:");
-            console.dir(parsedJSON);
             return parsedJSON;
         })
         .catch(error => {
@@ -75,8 +71,11 @@ function showProductListing() {
 
 window.onload = function() {
     changeMain("m_main.html");
-    console.dir(getJSONObject("storedata.json"));
-    loadedJSON = getJSONObject("storedata.json");
+    getJSONObject("storedata.json").then(
+        content => {
+            loadedJSON = content;
+        }
+    )
 }
 
 // Reminder to self: use CTRL + SHIFT + R to clear cache first.
