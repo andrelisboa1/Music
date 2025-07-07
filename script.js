@@ -28,7 +28,7 @@ function debugRead(filename) {
         });
 }
 
-function changeMain(filename) {
+function changeMain(filename, runExtras=function(){}) {
     readFromGithubFile(filename)
         .then(content => {
             let m = document.getElementById("main-sec");
@@ -41,7 +41,7 @@ function changeMain(filename) {
                 link.href = 'styles.css';
                 document.head.appendChild(link);
             }
-            document.body.dispatchEvent(onload);
+            runExtras();
         })
         .catch(error => {
             let m = document.getElementById("main-sec");
@@ -63,6 +63,10 @@ function getJSONObject(filename) {
 
 function getHeaders() {
     return loadedJSON.headers;
+}
+
+function showProductListing() {
+    document.getElementById("listing").innerText = getHeaders();
 }
 
 window.onload = function() {
