@@ -75,6 +75,7 @@ function showProductListing() {
 
 window.onload = function() {
     changeMain("m_main.html");
+    console.dir(getJSONObject("storedata.json"));
     loadedJSON = getJSONObject("storedata.json");
 }
 
