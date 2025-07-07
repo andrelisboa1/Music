@@ -7,8 +7,8 @@
     --color-background-odd: #220;
     --color-nav-background: #111;
     --color-main: #e5e5e5;
-    --color-secondary: #b0a990;
-    --color-accent: #8c6f4a;
+    --color-secondary: #c8c2ab;
+    --color-accent: #a88561;
     --color-error: #c0392b;
 
     --font-main: "Cormorant Garamond", serif;
@@ -147,7 +147,7 @@ main {
     margin-bottom: 2pt;
 }
 
-.text-section > div {
+.text-section>div {
     margin-top: var(--text-section-div-margin);
     margin-bottom: var(--text-section-div-margin);
     background-color: var(--color-background-even);
@@ -159,14 +159,14 @@ main {
     border-bottom: 1pt solid var(--color-accent);
 }
 
-.text-section > div:nth-child(odd) {
+.text-section>div:nth-child(odd) {
     background-color: var(--color-background-odd);
 }
 
-.text-section > div:first-child {
+.text-section>div:first-child {
     margin-top: 0 !important;
 }
 
-.text-section > div:last-child {
+.text-section>div:last-child {
     margin-bottom: 0 !important;
 }
