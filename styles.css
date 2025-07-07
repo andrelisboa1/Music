@@ -161,3 +161,11 @@ main {
 .text-section > div:nth-child(odd) {
     background-color: var(--color-background-odd);
 }
+
+.text-section > div:first-child {
+    margin-top: 0;
+}
+
+.text-section > div:last-child {
+    margin-bottom: 0;
+}
