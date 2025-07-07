@@ -141,8 +141,6 @@ main {
 .text-section {
     border-left: 4pt solid var(--color-accent);
     padding-left: 4pt;
-    padding-top: 4pt;
-    padding-bottom: 4pt;
     margin-bottom: 2pt;
 }
 
@@ -163,9 +161,9 @@ main {
 }
 
 .text-section > div:first-child {
-    margin-top: 0;
+    margin-top: 0 !important;
 }
 
 .text-section > div:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
