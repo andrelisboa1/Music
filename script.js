@@ -50,7 +50,7 @@ function changeMain(filename, runExtras=function(){}) {
 }
 
 function getJSONObject(filename) {
-	readFromGithubFile(filename)
+	return readFromGithubFile(filename)
         .then(content => {
             console.log("CONTENT DETECTED:");
             console.log(content);
