@@ -52,6 +52,8 @@ function changeMain(filename, runExtras=function(){}) {
 function getJSONObject(filename) {
 	readFromGithubFile(filename)
         .then(content => {
+            console.log("CONTENT DETECTED:");
+            console.log(content);
             return JSON.parse(content);
         })
         .catch(error => {
