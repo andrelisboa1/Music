@@ -151,18 +151,17 @@ main {
 .text-section>div {
     margin-top: var(--text-section-div-margin);
     margin-bottom: var(--text-section-div-margin);
-    background-color: var(--color-background-even);
-    padding-left: 2pt;
+    background-color: var(--color-background-even) !important;
+    padding-left: 4pt;
     padding-top: 6pt;
     padding-bottom: 4pt;
 
-    border-left: 0.5pt solid var(--color-secondary);
-    border-top: 1pt solid var(--color-secondary);
-    border-bottom: 1.5pt solid var(--color-accent);
+    border-top: 0.5pt solid var(--color-secondary);
+    border-bottom: 1pt solid var(--color-accent);
 }
 
 .text-section>div:nth-child(odd) {
-    background-color: var(--color-background-odd);
+    background-color: var(--color-background-odd) !important;
 }
 
 .text-section>div:first-child {
