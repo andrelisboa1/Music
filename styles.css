@@ -108,6 +108,8 @@ main {
 
     display: flex;
     align-items: center;
+
+
 }
 
 .nav-link {
@@ -119,6 +121,7 @@ main {
 
     padding: 0 var(--nav-inner-hpadding);
     height: 100%;
+    width: 10vw;
 
     display: flex;
     align-items: center;
@@ -139,6 +142,7 @@ main {
 .nav-link:focus {
     background-color: var(--color-accent);
     color: var(--color-background);
+    font-weight: bold;
 }
 
 .text-section {
