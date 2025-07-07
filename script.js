@@ -46,8 +46,21 @@ function changeMain(filename) {
         });
 }
 
+function getJSONObject(filename) {
+    let outp = {};
+	readFromGithubFile(filename)
+        .then(content => {
+            outp = JSON.parse(content);
+        })
+        .catch(error => {
+            outp = {"err": error};
+        });
+    return outp;
+}
+
 window.onload = function() {
     changeMain("m_main.html");
+    alert(getJSONObject("storedata.json"));
 }
 
 // Reminder to self: use CTRL + SHIFT + R to clear cache first.
