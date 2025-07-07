@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 :root {
     --color-background: #222;
     --color-background-even: #221;
@@ -12,7 +11,7 @@
     --color-error: #c0392b;
 
     --font-main: Prata, serif;
-    --font-header: "Playfair Display SC", serif;
+    --font-header: "Cormorant Garamond", serif;
 
     --font-size-h1: 22pt;
     --font-size-h2: 18pt;
@@ -151,7 +150,7 @@ main {
     margin-bottom: var(--text-section-div-margin);
     background-color: var(--color-background-even);
     padding-left: 2pt;
-    padding-top: 4pt;
+    padding-top: 6pt;
     padding-bottom: 4pt;
 
     border-top: 0.5pt solid var(--color-secondary);
