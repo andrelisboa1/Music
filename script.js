@@ -50,15 +50,13 @@ function changeMain(filename, runExtras=function(){}) {
 }
 
 function getJSONObject(filename) {
-    let outp = {};
 	readFromGithubFile(filename)
         .then(content => {
-            outp = JSON.parse(content);
+            return JSON.parse(content);
         })
         .catch(error => {
-            outp = {"err": error};
+            return {"err": error};
         });
-    return outp;
 }
 
 function getHeaders() {
