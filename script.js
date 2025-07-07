@@ -1,3 +1,5 @@
+let loadedJSON = {};
+
 function readFromGithubFile(filename) {
     let prefix = "raw.githubusercontent.com/andrelisboa1/Music/main/";
 
@@ -58,10 +60,13 @@ function getJSONObject(filename) {
     return outp;
 }
 
+function getHeaders() {
+    return loadedJSON.headers;
+}
+
 window.onload = function() {
     changeMain("m_main.html");
-    let d = getJSONObject("storedata.json");
-    alert(d.err);
+    loadedJSON = getJSONObject("storedata.json");
 }
 
 // Reminder to self: use CTRL + SHIFT + R to clear cache first.
