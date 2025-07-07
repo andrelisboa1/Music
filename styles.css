@@ -13,7 +13,6 @@
 
     --font-main: Prata, serif;
     --font-header: "Playfair Display SC", serif;
-    --text-header-size: 4vh;
 
     --nav-height: 5vh;
     --nav-inner-hpadding: 6pt;
@@ -30,35 +29,31 @@
 }
 
 h1 {
-    font-size: var(--text-header-size) !important;
+    font-size: 24pt !important;
     font-weight: normal !important;
     font-family: var(--font-header) !important;
-
     color: var(--color-main);
 }
 
 h2 {
-    font-size: calc(var(--text-header-size) * 0.625) !important;
+    font-size: 22pt !important;
     font-weight: normal !important;
     color: var(--color-main);
 }
 
 h3 {
-    --h3-font-size: calc(var(--text-header-size) * 0.5);
-    font-size: var(--h3-font-size) !important;
+    font-size: 20pt !important;
     font-weight: normal !important;
     color: var(--color-secondary);
     font-family: var(--font-main) !important;
     margin-top: 2vh !important;
     margin-bottom: 0.5vh !important;
     border-bottom: 1pt solid var(--color-accent);
-    height: calc(var(--h3-font-size) + 2pt);
 }
 
 div {
-    font-size: calc(var(--text-header-size) * 0.45);
+    font-size: 16pt;
     font-weight: normal !important;
-
     color: var(--color-main);
     font-family: var(--font-main) !important;
 }
@@ -86,7 +81,6 @@ main {
 
     background-color: var(--color-nav-background);
     border-bottom: 1pt solid var(--color-secondary);
-
 
     box-shadow: 0 0.1vh 1vh 0 var(--color-secondary);
 }
@@ -156,7 +150,6 @@ main {
     border-top: 0.5pt solid var(--color-secondary);
     border-bottom: 1pt solid var(--color-accent);
 }
-
 
 .text-section > div:nth-child(odd) {
     background-color: var(--color-background-odd);
