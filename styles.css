@@ -118,6 +118,7 @@ main {
 
     font-family: var(--font-main);
     font-size: var(--font-size-div);
+    font-weight: normal;
 
     padding: 0 var(--nav-inner-hpadding);
     height: 100%;
@@ -134,15 +135,11 @@ main {
 
 }
 
-.nav-link:last-child {
-    border-right: none;
-}
-
 .nav-link:hover,
 .nav-link:focus {
     background-color: var(--color-accent);
     color: var(--color-background);
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 .text-section {
