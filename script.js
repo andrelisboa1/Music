@@ -66,6 +66,7 @@ function getHeaders() {
 }
 
 function showProductListing() {
+    console.dir(loadedJSON);
     document.getElementById("listing").innerText = getHeaders();
 }
 
