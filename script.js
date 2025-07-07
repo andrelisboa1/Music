@@ -54,7 +54,10 @@ function getJSONObject(filename) {
         .then(content => {
             console.log("CONTENT DETECTED:");
             console.log(content);
-            return JSON.parse(content);
+            let parsedJSON = JSON.parse(content);
+            console.log("PARSED INTO:");
+            console.dir(parsedJSON);
+            return parsedJSON;
         })
         .catch(error => {
             return {"err": error};
