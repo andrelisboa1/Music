@@ -65,8 +65,21 @@ function getHeaders() {
 }
 
 function showProductListing() {
-    console.dir(loadedJSON);
-    document.getElementById("listing").innerText = getHeaders();
+    let headers = getHeaders();
+
+    let headerRow = document.createElement("div");
+    headerRow.classList.add("product-header-row");
+
+    //let rowsList = [];
+    for (let header of headers) {
+        let newHeader = document.createElement("div");
+        newHeader.classList.add("product-header");
+        newHeader.innerText = header;
+        headerRow.appendChild(newHeader);
+    }
+
+
+    document.getElementById("listing").appendChild(headerRow);
 }
 
 window.onload = function() {
