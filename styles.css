@@ -129,7 +129,7 @@ main {
 
     text-decoration: none;
     border-right: 1pt solid var(--color-secondary);
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s, font-weight 0.2s;
 
     cursor: pointer;
 
