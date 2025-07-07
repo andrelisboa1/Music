@@ -179,7 +179,7 @@ main {
 }
 
 .product-header {
-    --ph-margin: 4pt;
+    --ph-margin: 2pt;
     width: calc(33% - var(--ph-margin)*2);
 
     margin-right: var(--ph-margin);
