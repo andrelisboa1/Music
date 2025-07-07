@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
-* {
+:root {
     --color-background: #222;
     --color-background-even: #221;
     --color-background-odd: #220;
@@ -14,9 +14,16 @@
     --font-main: Prata, serif;
     --font-header: "Playfair Display SC", serif;
 
+    --font-size-h1: 22pt;
+    --font-size-h2: 18pt;
+    --font-size-h3: 16pt;
+    --font-size-div: 14pt;
+
     --nav-height: 5vh;
     --nav-inner-hpadding: 6pt;
+}
 
+* {
     background-color: var(--color-background);
     color: var(--color-main);
 
@@ -29,20 +36,20 @@
 }
 
 h1 {
-    font-size: 24pt !important;
+    font-size: var(--font-size-h1) !important;
     font-weight: normal !important;
     font-family: var(--font-header) !important;
     color: var(--color-main);
 }
 
 h2 {
-    font-size: 22pt !important;
+    font-size: var(--font-size-h2) !important;
     font-weight: normal !important;
     color: var(--color-main);
 }
 
 h3 {
-    font-size: 20pt !important;
+    font-size: var(--font-size-h3) !important;
     font-weight: normal !important;
     color: var(--color-secondary);
     font-family: var(--font-main) !important;
@@ -52,7 +59,7 @@ h3 {
 }
 
 div {
-    font-size: 16pt;
+    font-size: var(--font-size-div);
     font-weight: normal !important;
     color: var(--color-main);
     font-family: var(--font-main) !important;
