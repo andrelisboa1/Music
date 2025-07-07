@@ -172,6 +172,8 @@ main {
 
 
 .product-header-row {
+    --ph-margin: 2pt;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -179,16 +181,39 @@ main {
 }
 
 .product-header {
-    --ph-margin: 2pt;
-    width: calc(33% - var(--ph-margin)*2);
+    
+    width: calc(33% - var(--ph-margin)*2 - 4pt);
 
     margin-right: var(--ph-margin);
     margin-left: var(--ph-margin);
 
     background-color: var(--color-nav-background);
-    border: 1pt solid var(--color-accent);
+    border: 2pt solid var(--color-secondary);
     border-top-left-radius: 5pt;
     border-top-right-radius: 5pt;
+
+    text-align: center;
+}
+
+.product-cell-row {
+    --ph-margin: 2pt;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.product-cell {
+
+    width: calc(33% - var(--ph-margin)*2 - 2pt);
+
+    margin-top: var(--ph-margin);
+    margin-right: var(--ph-margin);
+    margin-left: var(--ph-margin);
+
+    background-color: var(--color-nav-background);
+    border: 1pt solid var(--color-accent);
 
     text-align: center;
 }

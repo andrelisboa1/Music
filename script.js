@@ -64,8 +64,14 @@ function getHeaders() {
     return loadedJSON.headers;
 }
 
+function getAllArticles() {
+    return loadedJSON.articles;
+}
+
 function showProductListing() {
+    let listing = document.getElementById("listing");
     let headers = getHeaders();
+    let articles = getAllArticles();
 
     let headerRow = document.createElement("div");
     headerRow.classList.add("product-header-row");
@@ -78,8 +84,22 @@ function showProductListing() {
         headerRow.appendChild(newHeader);
     }
 
+    listing.appendChild(headerRow);
 
-    document.getElementById("listing").appendChild(headerRow);
+    for (let article of articles) { 
+        let newArticle = document.createElement("div");
+        newArticle.classList.add("product-cell-row");
+
+        for (let header of headers) {
+            let newCell = document.createElement("div");
+            newCell.classList.add("product-cell");
+            newCell.innerText = article[header];
+
+            newArticle.appendChild(newCell);
+        }
+
+        listing.appendChild(newArticle);
+    }
 }
 
 window.onload = function() {
