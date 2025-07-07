@@ -60,7 +60,8 @@ function getJSONObject(filename) {
 
 window.onload = function() {
     changeMain("m_main.html");
-    alert(getJSONObject("storedata.json"));
+    let d = getJSONObject("storedata.json");
+    alert(d.err);
 }
 
 // Reminder to self: use CTRL + SHIFT + R to clear cache first.
