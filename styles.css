@@ -173,7 +173,7 @@ main {
 
 .product-header-row {
     --ph-margin: 2pt;
-    --ph-tb-padding: 3pt;
+    --ph-tb-padding: 2pt;
 
     display: flex;
     flex-direction: row;
@@ -189,7 +189,7 @@ main {
     margin-left: var(--ph-margin);
     
     padding-top: var(--ph-tb-padding);
-    padding-bottom: var(--ph-tb-padding);
+    padding-bottom: calc(var(--ph-tb-padding) * 1.5);
 
     background-color: var(--color-nav-background);
     box-sizing: border-box;
@@ -202,6 +202,7 @@ main {
 
 .product-cell-row {
     --ph-margin: 2pt;
+    --ph-tb-padding: 2pt;
 
     display: flex;
     flex-direction: row;
@@ -218,7 +219,7 @@ main {
     margin-left: var(--ph-margin);
     
     padding-top: var(--ph-tb-padding);
-    padding-bottom: var(--ph-tb-padding);
+    padding-bottom: calc(var(--ph-tb-padding) * 1.5);
 
     background-color: var(--color-nav-background);
     box-sizing: border-box;
