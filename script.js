@@ -142,7 +142,9 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
             let newCell = document.createElement("div");
             newCell.classList.add("product-cell");
             if (header === sortBy) {
-                newCell.style.borderColor = "var(--color-secondary)";
+                let c = "var(--color-secondary)";
+                newCell.style.borderColor = c;
+                newCell.style.color = c;
             }
             let cellContent = article[header];
             switch (header) {
