@@ -123,9 +123,10 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
             newHeader.style.borderColor = c;
             newHeader.style.color = c;
             newHeader.style.borderWidth = "2.5pt";
-            extraText = (sortDirection === "Desc") ? " ▲" : " ▼";
+            extraText = (sortDirection === "Desc") ? "▲" : "▼";
+            extraText = `<span style="margin-left:2pt; font-size: 12pt;">${extraText}</span>`
         }
-        newHeader.innerText = `${header}${extraText}`;
+        newHeader.innerHTML = `${header}${extraText}`;
         headerRow.appendChild(newHeader);
         headerIndex++;
     }
