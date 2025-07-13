@@ -168,7 +168,7 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
                     newCell.innerText = `${minutes} min, ${seconds} s`;
                     break;
                 case "Page":
-                    newCell.innerHTML = `<a href="${cellContent}" style="text-decoration: none">⧁</a>`;
+                    newCell.innerHTML = `<a href="${cellContent}" style="text-decoration: none">&gt; ⧁ &lt;</a>`;
                     newCell.onmouseenter = function(e) {
                         e.target.innerHTML = "⪧ ⧁ ⪦";
                         e.target.style.color = "#fff";
