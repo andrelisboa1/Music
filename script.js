@@ -169,6 +169,7 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
                     break;
                 case "Page":
                     newCell.innerHTML = `<a href="${cellContent}" style="text-decoration: none">⧁</a>`;
+                    newCell.classList.add("product-cell");
                     newCell.onmouseenter = function(e) {
                         e.target.innerHTML = "⪧ ⧁ ⪦";
                         e.target.style.color = "#fff";
