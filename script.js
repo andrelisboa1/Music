@@ -138,7 +138,7 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
             if (!elem.innerHTML.includes(productListingSortBy)) {
                 showProductListing(elem.innerText, "Asc");
             } else {
-                showProductListing(productListingSortBy, (productListingSortBy === "Asc") ? "Desc" : "Asc");
+                showProductListing(productListingSortBy, (productListingDirection === "Asc") ? "Desc" : "Asc");
             }
         };
         headerRow.appendChild(newHeader);
