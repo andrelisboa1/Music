@@ -39,6 +39,17 @@
       },
       "Grading": "6",
       "Page": ""
+    },
+    {
+      "Name": "Dance in Portuguese Style no.1",
+      "Short Description": "A playful hommage to the Portuguese Dance 'Vira'.",
+      "Instrumentation": "Concert Band",
+      "Duration": {
+        "minutes": 3,
+        "seconds": 30
+      },
+      "Grading": "3+",
+      "Page": ""
     }
   ]
 }
