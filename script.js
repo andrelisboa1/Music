@@ -168,9 +168,13 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
                     newCell.innerText = `${minutes} min, ${seconds} s`;
                     break;
                 case "Page":
-                    newCell.innerHTML = `<a href="${cellContent}">📩</a>`;
-                    newCell.style.textDecoration = "none";
-                    newCell.style.backgroundColor = "inherit";
+                    newCell.innerHTML = `<div><a href="${cellContent}" style="background-color: inherit">📩</a></div>`;
+                    newCell.onmouseenter = function(e) {
+                        e.target.style.fontSize = "calc(var(--font-size-div) * 1.2)";
+                    }
+                    newCell.onmouseleave = function(e) {
+                        e.target.style.fontSize = "calc(var(--font-size-div) * 1)";
+                    }
                     break;
                 default:
                     newCell.innerText = article[header];
