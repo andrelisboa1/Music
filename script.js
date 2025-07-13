@@ -169,6 +169,8 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
                     break;
                 case "Page":
                     newCell.innerHTML = `<a href="${cellContent}">📩</a>`;
+                    newCell.style.textDecoration = "none";
+                    newCell.style.backgroundColor = "inherit";
                     break;
                 default:
                     newCell.innerText = article[header];
