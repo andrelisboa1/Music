@@ -178,7 +178,7 @@ main {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    height: calc(var(--font-size-div) * 1.5);
+    height: calc(var(--font-size-div) * 1.667);
 }
 
 .product-header {
