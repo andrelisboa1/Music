@@ -117,6 +117,12 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
         let newHeader = document.createElement("div");
         newHeader.classList.add("product-header");
         newHeader.style.width = `calc(${100 * (proportions[headerIndex] / proportionTotal)}% - var(--ph-margin)*2)`;
+        if (header === sortBy) {
+            let c = "#fff";
+            newHeader.style.borderColor = c;
+            newHeader.style.color = c;
+            newHeader.style.borderWidth = "3pt";
+        }
         newHeader.innerText = `${header}`;
         headerRow.appendChild(newHeader);
         headerIndex++;
@@ -132,7 +138,9 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
         for (let header of headers) {
             let newCell = document.createElement("div");
             newCell.classList.add("product-cell");
-
+            if (header === sortBy) {
+                newCell.style.borderWidth = "2pt";
+            }
             let cellContent = article[header];
             switch (header) {
                 case "Duration":
