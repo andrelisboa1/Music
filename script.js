@@ -167,6 +167,9 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
                     if (seconds.length == 1) seconds = "0" + seconds;
                     newCell.innerText = `${minutes} min, ${seconds} s`;
                     break;
+                case "Page":
+                    newCell.innerHTML = `<a href="${cellContent}">📩</a>`;
+                    break;
                 default:
                     newCell.innerText = article[header];
                     break;
