@@ -85,6 +85,7 @@ function showProductListing() {
 
     let headerRow = document.createElement("div");
     headerRow.classList.add("product-header-row");
+    headerRow.style.height = "128pt";
 
     //let rowsList = [];
     let headerIndex = 0;
