@@ -67,6 +67,10 @@ div {
     font-family: var(--font-main) !important;
 }
 
+b {
+    background-color: inherit;
+}
+
 main {
     margin-top: calc(var(--nav-height) + 1vh);
 }
