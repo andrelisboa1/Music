@@ -168,7 +168,7 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
                     newCell.innerText = `${minutes} min, ${seconds} s`;
                     break;
                 case "Page":
-                    newCell.innerHTML = `<div><a href="${cellContent}" style="background-color: inherit">⧁</a></div>`;
+                    newCell.innerHTML = `<a href="${cellContent}" style="background-color: inherit">⧁</a>`;
                     newCell.onmouseenter = function(e) {
                         e.target.style.fontSize = "calc(var(--font-size-div) * 1.2)";
                     }
