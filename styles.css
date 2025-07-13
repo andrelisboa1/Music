@@ -197,7 +197,7 @@ main {
 
     background-color: var(--color-nav-background);
     box-sizing: border-box;
-    border: 2pt solid var(--color-secondary);
+    border: 2pt solid var(--color-accent);
     border-top-left-radius: 5pt;
     border-top-right-radius: 5pt;
 
@@ -207,6 +207,7 @@ main {
 .product-header:hover {
     border-color: #fff;
     color: #fff;
+    font-weight: bold;
 }
 
 .product-cell-row {
