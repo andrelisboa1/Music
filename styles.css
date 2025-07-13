@@ -184,7 +184,7 @@ main {
 .product-header {
     
     width: calc(33% - var(--ph-margin)*2 - 4pt);
-    height: calc(var(--font-main) * 6);
+    height: calc(var(--font-main) * 6) !important;
 
     margin-right: var(--ph-margin);
     margin-left: var(--ph-margin);
