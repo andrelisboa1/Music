@@ -108,7 +108,7 @@ function showProductListing() {
             let newCell = document.createElement("div");
             newCell.classList.add("product-cell");
             newCell.innerText = article[header];
-            newCell.style.width = `calc(${100 * (proportions[headerIndex] / proportionTotal)}% - var(--ph-margin)*2 - 4pt)`;
+            newCell.style.width = `calc(${100 * (proportions[headerIndex] / proportionTotal)}% - var(--ph-margin)*2 - 2pt)`;
             newArticle.appendChild(newCell);
             headerIndex++;
         }
