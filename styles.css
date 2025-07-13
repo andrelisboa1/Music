@@ -179,7 +179,7 @@ main {
     justify-content: center;
     width: 100%;
 
-    height: calc(var(--font-main) * 1.667);
+    height: calc(var(--font-main) * 2);
 }
 
 .product-header {
