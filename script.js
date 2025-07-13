@@ -72,10 +72,36 @@ function getColumnProportions() {
     return loadedJSON.headerProportion;
 }
 
-function showProductListing() {
+function showProductListing(sortBy = "Name", sortDirection = "Asc") {
     let listing = document.getElementById("listing");
+    listing.innerHTML = ""; // Clear any existing content
+
     let headers = getHeaders();
     let articles = getAllArticles();
+
+    // 💡 Sorting logic
+    articles.sort((a, b) => {
+        let aVal = a[sortBy];
+        let bVal = b[sortBy];
+
+        // Handle Duration sorting specially
+        if (sortBy === "Duration") {
+            let aMinutes = parseInt(aVal.minutes || 0);
+            let aSeconds = parseInt(aVal.seconds || 0);
+            let bMinutes = parseInt(bVal.minutes || 0);
+            let bSeconds = parseInt(bVal.seconds || 0);
+
+            aVal = aMinutes * 60 + aSeconds;
+            bVal = bMinutes * 60 + bSeconds;
+        }
+
+        if (typeof aVal === "string") aVal = aVal.toLowerCase();
+        if (typeof bVal === "string") bVal = bVal.toLowerCase();
+
+        if (aVal < bVal) return sortDirection === "Asc" ? -1 : 1;
+        if (aVal > bVal) return sortDirection === "Asc" ? 1 : -1;
+        return 0;
+    });
 
     let proportions = getColumnProportions();
     let proportionTotal = 0;
@@ -86,7 +112,6 @@ function showProductListing() {
     let headerRow = document.createElement("div");
     headerRow.classList.add("product-header-row");
 
-    //let rowsList = [];
     let headerIndex = 0;
     for (let header of headers) {
         let newHeader = document.createElement("div");
@@ -99,7 +124,7 @@ function showProductListing() {
 
     listing.appendChild(headerRow);
 
-    for (let article of articles) { 
+    for (let article of articles) {
         let newArticle = document.createElement("div");
         newArticle.classList.add("product-cell-row");
 
@@ -120,7 +145,7 @@ function showProductListing() {
                     newCell.innerText = article[header];
                     break;
             }
-            
+
             newCell.style.width = `calc(${100 * (proportions[headerIndex] / proportionTotal)}% - var(--ph-margin)*2)`;
             newArticle.appendChild(newCell);
             headerIndex++;
