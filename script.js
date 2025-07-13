@@ -72,12 +72,17 @@ function getColumnProportions() {
     return loadedJSON.headerProportion;
 }
 
+
+let productListingSortBy = "Name";
+let productListingDirection = "Asc";
 function showProductListing(sortBy = "Name", sortDirection = "Asc") {
     let listing = document.getElementById("listing");
     listing.innerHTML = ""; // Clear any existing content
 
     let headers = getHeaders();
     let articles = getAllArticles();
+    productListingSortBy = sortBy;
+    productListingDirection = sortDirection;
 
     // 💡 Sorting logic
     articles.sort((a, b) => {
@@ -127,6 +132,15 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
             extraText = `<span style="margin-left:2pt; font-size: 12pt; background-color: inherit;">${extraText}</span>`
         }
         newHeader.innerHTML = `${header}${extraText}`;
+        newHeader.onclick = function(e) {
+            let elem = e.target;
+
+            if (!elem.innerHTML.includes(productListingSortBy)) {
+                showProductListing(elem.innerText, "Asc");
+            } else {
+                showProductListing(productListingSortBy, (productListingSortBy === "Asc") ? "Desc" : "Asc");
+            }
+        };
         headerRow.appendChild(newHeader);
         headerIndex++;
     }
@@ -144,7 +158,7 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
             if (header === sortBy) {
                 let c = "var(--color-secondary)";
                 newCell.style.borderColor = c;
-                newCell.style.color = c;
+                newCell.style.color = "#fff";
             }
             let cellContent = article[header];
             switch (header) {
