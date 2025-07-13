@@ -188,6 +188,7 @@ main {
     margin-left: var(--ph-margin);
 
     background-color: var(--color-nav-background);
+    box-sizing: border-box;
     border: 2pt solid var(--color-secondary);
     border-top-left-radius: 5pt;
     border-top-right-radius: 5pt;
@@ -213,6 +214,7 @@ main {
     margin-left: var(--ph-margin);
 
     background-color: var(--color-nav-background);
+    box-sizing: border-box;
     border: 1pt solid var(--color-accent);
     text-align: center;
 }

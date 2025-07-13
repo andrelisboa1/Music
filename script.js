@@ -91,7 +91,7 @@ function showProductListing() {
     for (let header of headers) {
         let newHeader = document.createElement("div");
         newHeader.classList.add("product-header");
-        newHeader.style.width = `calc(${100 * (proportions[headerIndex] / proportionTotal)}% - var(--ph-margin)*2 - 4pt)`;
+        newHeader.style.width = `calc(${100 * (proportions[headerIndex] / proportionTotal)}% - var(--ph-margin)*2)`;
         newHeader.innerText = header;
         headerRow.appendChild(newHeader);
         headerIndex++;
@@ -108,7 +108,7 @@ function showProductListing() {
             let newCell = document.createElement("div");
             newCell.classList.add("product-cell");
             newCell.innerText = article[header];
-            newCell.style.width = `calc(${99.8 * (proportions[headerIndex] / proportionTotal)}% - var(--ph-margin)*2 - 2pt)`;
+            newCell.style.width = `calc(${100 * (proportions[headerIndex] / proportionTotal)}% - var(--ph-margin)*2)`;
             newArticle.appendChild(newCell);
             headerIndex++;
         }
