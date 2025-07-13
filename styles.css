@@ -189,7 +189,7 @@ main {
     margin-left: var(--ph-margin);
     
     padding-top: var(--ph-tb-padding);
-    padding-bottom: calc(var(--ph-tb-padding) * 1.5);
+    padding-bottom: calc(var(--ph-tb-padding) * 2);
 
     background-color: var(--color-nav-background);
     box-sizing: border-box;
@@ -219,7 +219,7 @@ main {
     margin-left: var(--ph-margin);
     
     padding-top: var(--ph-tb-padding);
-    padding-bottom: calc(var(--ph-tb-padding) * 1.5);
+    padding-bottom: calc(var(--ph-tb-padding) * 2);
 
     background-color: var(--color-nav-background);
     box-sizing: border-box;
