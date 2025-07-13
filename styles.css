@@ -205,8 +205,8 @@ main {
 }
 
 .product-header:hover {
-    border-color: #fff;
-    color: #fff;
+    border-color: #fff !important;
+    color: #fff !important;
     font-weight: bold;
 }
 
