@@ -174,7 +174,7 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
                         e.target.style.color = "#fff";
                     }
                     newCell.onmouseleave = function(e) {
-                        e.target.innerHTML = "⧁";
+                        e.target.innerHTML = "&gt; ⧁ &lt;";
                         e.target.style.color = "var(--color-main)";
                     }
                     break;
