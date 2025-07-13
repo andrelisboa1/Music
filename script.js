@@ -92,7 +92,7 @@ function showProductListing() {
         let newHeader = document.createElement("div");
         newHeader.classList.add("product-header");
         newHeader.style.width = `calc(${100 * (proportions[headerIndex] / proportionTotal)}% - var(--ph-margin)*2)`;
-        newHeader.innerText = `header (${proportions[headerIndex]})`;
+        newHeader.innerText = `${header} (${proportions[headerIndex]})`;
         headerRow.appendChild(newHeader);
         headerIndex++;
     }
