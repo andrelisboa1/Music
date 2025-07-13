@@ -206,7 +206,7 @@ main {
 
 .product-cell {
 
-    width: calc(33% - var(--ph-margin)*2 - 1.9pt);
+    width: calc(33% - var(--ph-margin)*2 - 2pt);
 
     margin-top: var(--ph-margin);
     margin-right: var(--ph-margin);
