@@ -68,20 +68,33 @@ function getAllArticles() {
     return loadedJSON.articles;
 }
 
+function getColumnProportions() {
+    return loadedJSON.headerProportion;
+}
+
 function showProductListing() {
     let listing = document.getElementById("listing");
     let headers = getHeaders();
     let articles = getAllArticles();
 
+    let proportions = getColumnProportions();
+    let proportionTotal = 0;
+    for (let proportion of proportions) {
+        proportionTotal += Number.parseInt(proportion);
+    }
+
     let headerRow = document.createElement("div");
     headerRow.classList.add("product-header-row");
 
     //let rowsList = [];
+    let headerIndex = 0;
     for (let header of headers) {
         let newHeader = document.createElement("div");
         newHeader.classList.add("product-header");
+        newHeader.style.width = `calc(${100 * (proportions[headerIndex] / proportionTotal)}% - var(--ph-margin)*2 - 4pt)`;
         newHeader.innerText = header;
         headerRow.appendChild(newHeader);
+        headerIndex++;
     }
 
     listing.appendChild(headerRow);
@@ -90,12 +103,14 @@ function showProductListing() {
         let newArticle = document.createElement("div");
         newArticle.classList.add("product-cell-row");
 
+        headerIndex = 0;
         for (let header of headers) {
             let newCell = document.createElement("div");
             newCell.classList.add("product-cell");
             newCell.innerText = article[header];
-
+            newCell.style.width = `calc(${100 * (proportions[headerIndex] / proportionTotal)}% - var(--ph-margin)*2 - 4pt)`;
             newArticle.appendChild(newCell);
+            headerIndex++;
         }
 
         listing.appendChild(newArticle);
