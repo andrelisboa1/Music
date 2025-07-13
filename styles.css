@@ -204,6 +204,11 @@ main {
     text-align: center;
 }
 
+.product-header:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
 .product-cell-row {
     --ph-margin: 2pt;
     --ph-tb-padding: 2pt;
