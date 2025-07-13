@@ -5,7 +5,7 @@ function readFromGithubFile(filename) {
 
     let content = "";
 
-    return fetch(`https://${prefix}${filename}`)
+    return fetch(`https://${prefix}${filename}?v=${new Date().getTime()}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
