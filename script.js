@@ -128,6 +128,7 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
             newHeader.style.borderColor = c;
             newHeader.style.color = c;
             newHeader.style.borderWidth = "2.5pt";
+            newHeader.style.fontWeight = "bold";
             extraText = (sortDirection === "Desc") ? "▲" : "▼";
             extraText = `<span style="margin-left: 2pt; font-size: 12pt; background-color: inherit;">${extraText}</span>`
         }
