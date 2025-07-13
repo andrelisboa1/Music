@@ -115,15 +115,17 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
     let headerIndex = 0;
     for (let header of headers) {
         let newHeader = document.createElement("div");
+        let extraText = "";
         newHeader.classList.add("product-header");
         newHeader.style.width = `calc(${100 * (proportions[headerIndex] / proportionTotal)}% - var(--ph-margin)*2)`;
         if (header === sortBy) {
             let c = "#fff";
             newHeader.style.borderColor = c;
             newHeader.style.color = c;
-            newHeader.style.borderWidth = "3pt";
+            newHeader.style.borderWidth = "2.5pt";
+            extraText = (sortDirection === "Desc") ? " ▲" : " ▼";
         }
-        newHeader.innerText = `${header}`;
+        newHeader.innerText = `${header}${extraText}`;
         headerRow.appendChild(newHeader);
         headerIndex++;
     }

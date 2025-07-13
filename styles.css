@@ -214,7 +214,7 @@ main {
 
     width: calc(33% - var(--ph-margin)*2 - 2pt);
 
-    margin-top: var(--ph-margin);
+    margin-top: calc(var(--ph-margin) * 1.5);
     margin-right: var(--ph-margin);
     margin-left: var(--ph-margin);
     
