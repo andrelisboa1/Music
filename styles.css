@@ -87,6 +87,7 @@ select {
     font-size: var(--font-size-div-small);
     padding-top: 1pt;
     padding-bottom: 1pt;
+    scrollbar-width: thin;
 }
 
 #nav-bar {
