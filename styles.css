@@ -252,9 +252,12 @@ select {
 }
 
 .filter-section {
-    flex-basis: 20%;
+    min-width: 64pt;
     border-right: 1pt solid var(--color-accent);
     padding-left: 1pt;
     padding-right: 1pt;
     margin-right: 2pt;
+
+    display: flex;
+    flex-direction: row;
 }
