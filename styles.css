@@ -379,4 +379,6 @@ select {
     --ico-size: 16pt;
     width: var(--ico-size);
     height: var(--ico-size);
+
+    margin-right: 4pt;
 }
