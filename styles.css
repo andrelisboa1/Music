@@ -376,5 +376,7 @@ select {
 .filter-icon {
     background-color: var(--color-nav-background);
 
-    width: 16pt;
+    --ico-size: 16pt;
+    width: var(--ico-size);
+    height: var(--ico-size);
 }
