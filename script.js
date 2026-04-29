@@ -93,14 +93,14 @@ let productListingSortBy = "Name";
 let productListingDirection = "Asc";
 function showProductListing(sortBy = "Name", sortDirection = "Asc") {
     let listing = document.getElementById("listing");
-    listing.innerHTML = ""; // Clear any existing content
+    listing.innerHTML = ""; // old content begone!
 
     let headers = getHeaders();
     let articles = getAllArticles();
     productListingSortBy = sortBy;
     productListingDirection = sortDirection;
 
-    // 💡 Sorting logic
+    // sorting logic here
     articles.sort((a, b) => {
         let aVal = a[sortBy];
         let bVal = b[sortBy];
@@ -124,7 +124,7 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
         return 0;
     });
 
-    // reading the proportions of the columns
+    // column proportions
     let proportions = getColumnProportions();
     let proportionTotal = 0;
     for (let proportion of proportions) {
@@ -189,14 +189,14 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
                 case "Page":
                     newCell.innerHTML = `<a href="${cellContent}" style="text-decoration: none; font-weight: 300;">View Page</a>`;
                     newCell.onmouseenter = function(e) {
-                        e.target.innerHTML = "View Page";
+                        e.target.innerHTML = ".View Page.";
                         e.target.style.color = "#fff";
-                        e.target.style.fontWeight = "600 !important";
+                        e.target.style.fontWeight = "800";
                         console.log(`Mouse has entered the page link for article: ${article["Name"]}`);
                     }
                     newCell.onmouseleave = function(e) {
                         e.target.innerHTML = "View Page";
-                        e.target.style.fontWeight = "300 !important";
+                        e.target.style.fontWeight = "300";
                         e.target.style.color = "var(--color-main)";
                         console.log(`Mouse has left the page link for article: ${article["Name"]}`);
                     }
