@@ -211,6 +211,8 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
 
         listing.appendChild(newArticle);
     }
+
+    applyFilterStyling();
 }
 
 window.onload = function() {
