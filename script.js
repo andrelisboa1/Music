@@ -60,6 +60,21 @@ function getJSONObject(filename) {
         });
 }
 
+function applyFilterStyling() {
+    document.querySelectorAll('.filter-list div[data-value]').forEach(item => {
+        item.addEventListener('click', () => {
+            const details = item.closest('details');
+            const summary = details.querySelector('summary');
+
+            summary.textContent = item.textContent;
+            details.removeAttribute('open');
+
+            // You can trigger your filtering logic here:
+            // filterProducts(item.dataset.value);
+        });
+    });
+}
+
 function getHeaders() {
     return loadedJSON.headers;
 }
