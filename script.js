@@ -62,6 +62,7 @@ function getJSONObject(filename) {
 
 function applyFilterStyling() {
     document.querySelectorAll('.filter-list div[data-value]').forEach(item => {
+        console.log(`Applying filter styling to: ${item.textContent}`);
         item.addEventListener('click', () => {
             const details = item.closest('details');
             const summary = details.querySelector('summary');
