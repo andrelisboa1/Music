@@ -199,9 +199,8 @@ select {
     margin-bottom: 0 !important;
 }
 
-.white-icon {
-    filter: contrast(100%) invert(100%);
-}
+
+
 
 /* ---------------- Listing Page ---------------- */
 .product-header-row {
@@ -362,4 +361,19 @@ select {
     border-bottom: 1pt solid var(--color-accent);
     margin-bottom: 2pt;
     padding-bottom: 1pt;
+}
+
+.filter-button {
+    background-color: var(--color-nav-background);
+    color: var(--color-main);
+    border: 1pt solid var(--color-accent);
+    padding: 4pt 8pt;
+    margin-right: 6pt;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, font-weight 0.2s;
+}
+
+.filter-icon {
+    background-color: var(--color-nav-background);
+    filter: contrast(100%);
 }
