@@ -190,15 +190,15 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
                     newCell.innerHTML = `<a href="${cellContent}" style="text-decoration: none; font-weight: 300;">View Page</a>`;
                     newCell.onmouseenter = function(e) {
                         e.target.innerHTML = "View Page";
-                        e.target.style.color = "#f00";
+                        e.target.style.color = "var(--color-accent)";
                         e.target.style.fontWeight = "800";
-                        console.log(`Mouse has entered the page link for article: ${article["Name"]}`);
+                        e.target.style.fontSize = "13pt";
                     }
                     newCell.onmouseleave = function(e) {
                         e.target.innerHTML = "View Page";
                         e.target.style.fontWeight = "300";
                         e.target.style.color = "var(--color-main)";
-                        console.log(`Mouse has left the page link for article: ${article["Name"]}`);
+                        e.target.style.fontSize = "12pt";
                     }
                     break;
                 default:
