@@ -256,6 +256,7 @@ select {
 
 .filter-label {
     margin-right: 1pt;
+    background-color: darkgreen;
 }
 
 .filter-select {
