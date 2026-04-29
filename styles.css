@@ -298,3 +298,54 @@ select {
     border-right: none;
     margin-right: 0;
 }
+
+.filter-details {
+    border: 1pt solid var(--color-accent);
+    border-radius: 4pt;
+    margin-right: 10pt;
+    width: 200px;
+    background-color: var(--color-background-even);
+}
+
+.filter-details summary {
+    cursor: pointer;
+    padding: 4pt 6pt;
+    font-size: var(--font-size-div-small);
+    background-color: var(--color-nav-background);
+    border-bottom: 1pt solid var(--color-accent);
+    list-style: none;
+}
+
+.filter-details[open] summary {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    font-weight: bold;
+}
+
+.filter-list {
+    max-height: 150pt;       /* scroll limit */
+    overflow-y: auto;
+    padding: 4pt;
+}
+
+.filter-list div {
+    padding: 2pt 4pt;
+    cursor: pointer;
+}
+
+.filter-list div:hover {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+}
+
+.group {
+    margin-top: 6pt;
+    font-weight: bold;
+    color: var(--color-secondary);
+}
+
+.subgroup {
+    margin-left: 8pt;
+    font-style: italic;
+    color: var(--color-secondary);
+}

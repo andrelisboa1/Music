@@ -2,53 +2,56 @@
 
 <h3>Filters</h3>
 <div class="filter-bar">
-    <div class="filter-section">
-        <div class="filter-label">Instrumentation:</div>
-        <select size="6" class="filter-select" id="instrumentation-filter">
-            <option value="All">All</option>
 
-            <option value="Orchestral">════ Orchestral</option>
-            <option value="Concert Band">Concert Band</option>
-            <option value="String Orchestra">String Orchestra</option>
-            
-            <option value="Solo">════ Solo</option>
-            <option value="Solo - Piano">Solo - Piano</option>
-            <option value="Solo - Violin">Solo - Violin</option>
+    <!-- Instrumentation -->
+    <details class="filter-details">
+        <summary>Instrumentation</summary>
+        <div class="filter-list">
+            <div data-value="All">All</div>
 
-            <option value="Chamber">════ Chamber</option>
-            <option value="Duets">── Duets</option>
-            <option value="Chamber - Flute Duet">Chamber - Flute Duet</option>
-            <option value="Chamber - Clarinet Duet">Chamber - Clarinet Duet</option>
-            <option value="Chamber - Violin Duet">Chamber - Violin Duet</option>
-            <option value="Chamber - Cello Duet">Chamber - Cello Duet</option>
+            <div class="group">════ Orchestral</div>
+            <div data-value="Concert Band">Concert Band</div>
+            <div data-value="String Orchestra">String Orchestra</div>
 
-            <option value="Trios">── Trios</option>
-            <option value="Chamber - Flute Trio">Chamber - Flute Trio</option>
-            <option value="Chamber - Clarinet Trio">Chamber - Clarinet Trio</option>
-            <option value="Chamber - Violin Trio">Chamber - Violin Trio</option>
-            <option value="Chamber - Cello Trio">Chamber - Cello Trio</option>
-            <option value="Chamber - String Trio">Chamber - String Trio</option>
+            <div class="group">════ Solo</div>
+            <div data-value="Solo - Piano">Solo - Piano</div>
+            <div data-value="Solo - Violin">Solo - Violin</div>
 
-        </select>
-    </div>
-    <div class="filter-section">
-        <div class="filter-label">Difficulty: </div>
-        <select size="6" class="filter-select" id="difficulty-filter">
-            <option value="0">All</option>
-            <option value="0.5">0.5</option>
-            <option value="1">1</option>
-            <option value="1+">1+</option>
-            <option value="2">2</option>
-            <option value="2+">2+</option>
-            <option value="3">3</option>
-            <option value="3+">3+</option>
-            <option value="4">4</option>
-            <option value="4+">4+</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-        </select>
-    </div>
-    
+            <div class="group">════ Chamber</div>
+            <div class="subgroup">── Duets</div>
+            <div data-value="Chamber - Flute Duet">Flute Duet</div>
+            <div data-value="Chamber - Clarinet Duet">Clarinet Duet</div>
+            <div data-value="Chamber - Violin Duet">Violin Duet</div>
+            <div data-value="Chamber - Cello Duet">Cello Duet</div>
+
+            <div class="subgroup">── Trios</div>
+            <div data-value="Chamber - Flute Trio">Flute Trio</div>
+            <div data-value="Chamber - Clarinet Trio">Clarinet Trio</div>
+            <div data-value="Chamber - Violin Trio">Violin Trio</div>
+            <div data-value="Chamber - Cello Trio">Cello Trio</div>
+            <div data-value="Chamber - String Trio">String Trio</div>
+        </div>
+    </details>
+
+    <!-- Difficulty -->
+    <details class="filter-details">
+        <summary>Difficulty</summary>
+        <div class="filter-list">
+            <div data-value="0">All</div>
+            <div data-value="0.5">0.5</div>
+            <div data-value="1">1</div>
+            <div data-value="1+">1+</div>
+            <div data-value="2">2</div>
+            <div data-value="2+">2+</div>
+            <div data-value="3">3</div>
+            <div data-value="3+">3+</div>
+            <div data-value="4">4</div>
+            <div data-value="4+">4+</div>
+            <div data-value="5">5</div>
+            <div data-value="6">6</div>
+        </div>
+    </details>
+
 </div>
 
 <h3>Available products for sale:</h3>
