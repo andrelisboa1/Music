@@ -199,6 +199,9 @@ select {
     margin-bottom: 0 !important;
 }
 
+.white-icon {
+    filter: invert(100%) sepia(100%) grayscale(100%);
+}
 
 /* ---------------- Listing Page ---------------- */
 .product-header-row {
@@ -304,7 +307,6 @@ select {
 
 .filter-details {
     border: 1pt solid var(--color-accent);
-    border-radius: 4pt;
     margin-right: 10pt;
     width: 15%;
     background-color: var(--color-background-even);
