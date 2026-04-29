@@ -18,6 +18,7 @@
     --font-size-h2: 22pt;
     --font-size-h3: 20pt;
     --font-size-div: 16pt;
+    --font-size-div-small: 14pt;
 
     --nav-height: 5vh;
     --nav-inner-hpadding: 6pt;
@@ -76,6 +77,10 @@ a {
 
 main {
     margin-top: calc(var(--nav-height) + 1vh);
+}
+
+select {
+    font-size: var(--font-size-div-small);
 }
 
 #nav-bar {
@@ -248,4 +253,8 @@ main {
 
 .filter-bar > div {
     flex: 1 1 20%;
+    border-right: 1pt solid var(--color-accent);
+    padding-left: 1pt;
+    padding-right: 1pt;
+    margin-right: 2pt;
 }
