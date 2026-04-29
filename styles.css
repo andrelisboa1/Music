@@ -254,6 +254,15 @@ select {
     vertical-align: middle;
 }
 
+.filter-label {
+    margin-right: 1pt;
+}
+
+.filter-select {
+    margin-left: 1pt;
+    margin-right: 2pt;
+}
+
 .filter-section {
     min-width: 64pt;
     border-right: 1pt solid var(--color-accent);
