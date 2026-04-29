@@ -377,5 +377,4 @@ select {
     background-color: var(--color-nav-background);
 
     width: 16pt;
-    filter: contrast(100%) invert(100%);
 }
