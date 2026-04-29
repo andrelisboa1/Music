@@ -134,6 +134,7 @@ select {
     font-size: calc(var(--nav-height) * 0.67);
     margin-left: 4pt;
     margin-right: 1pt;
+    margin-bottom: calc(var(--nav-height) * (0.67 - 0.5));
 }
 
 .nav-link {
