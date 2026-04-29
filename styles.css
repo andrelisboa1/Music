@@ -128,6 +128,11 @@ select {
     align-items: center;
 }
 
+.nav-header b {
+    font-weight: regular !important;
+    font-size: calc(var(--nav-height) * 0.67);
+}
+
 .nav-link {
     background-color: var(--color-nav-background);
     color: var(--color-main);
