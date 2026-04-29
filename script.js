@@ -191,10 +191,12 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
                 case "Page":
                     newCell.innerHTML = `<a href="${cellContent}" style="text-decoration: none; font-weight: normal;">View Page</a>`;
                     newCell.onmouseenter = function(e) {
+                        e.target.innerHTML = "View Page";
                         e.target.style.color = "#fff";
                         e.target.style.fontWeight = "bold !important";
                     }
                     newCell.onmouseleave = function(e) {
+                        e.target.innerHTML = "View Page";
                         e.target.style.fontWeight = "normal !important";
                         e.target.style.color = "var(--color-main)";
                     }
