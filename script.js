@@ -192,13 +192,13 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
                         e.target.innerHTML = "View Page";
                         e.target.style.color = "var(--color-accent)";
                         e.target.style.fontWeight = "800";
-                        e.target.style.fontSize = "13pt";
+                        e.target.style.fontSize = "15pt";
                     }
                     newCell.onmouseleave = function(e) {
                         e.target.innerHTML = "View Page";
                         e.target.style.fontWeight = "300";
                         e.target.style.color = "var(--color-main)";
-                        e.target.style.fontSize = "12pt";
+                        e.target.style.fontSize = "14pt";
                     }
                     break;
                 default:
