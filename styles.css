@@ -200,7 +200,7 @@ select {
 }
 
 .white-icon {
-    filter: invert(100%) sepia(100%) grayscale(100%);
+    filter: invert(100%);
 }
 
 /* ---------------- Listing Page ---------------- */
