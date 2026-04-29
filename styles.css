@@ -376,13 +376,6 @@ select {
 .filter-icon {
     background-color: var(--color-nav-background);
 
-    --img-size: 16pt;
-    width: var(--img-size);
-    min-width: var(--img-size);
-    max-width: var(--img-size);
-    height: var(--img-size);
-    min-height: var(--img-size);
-    max-height: var(--img-size);
-
-    filter: contrast(100%);
+    width: 16pt;
+    filter: contrast(100%) invert(100%);
 }
