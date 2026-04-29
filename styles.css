@@ -18,11 +18,11 @@
     /*--font-header: "Playfair Display SC", serif;*/
     --font-header: "Murecho", sans-serif;
 
-    --font-size-h1: 24pt;
-    --font-size-h2: 22pt;
-    --font-size-h3: 20pt;
-    --font-size-div: 16pt;
-    --font-size-div-small: 14pt;
+    --font-size-h1: 22pt;
+    --font-size-h2: 20pt;
+    --font-size-h3: 16pt;
+    --font-size-div: 14pt;
+    --font-size-div-small: 12pt;
 
     --nav-height: 5vh;
     --nav-inner-hpadding: 6pt;
