@@ -81,6 +81,8 @@ main {
 
 select {
     font-size: var(--font-size-div-small);
+    padding-top: 1pt;
+    padding-bottom: 1pt;
 }
 
 #nav-bar {
@@ -249,7 +251,7 @@ select {
 .filter-bar {
     display: flex;
     flex-direction: row;
-    height: 64pt;
+    vertical-align: middle;
 }
 
 .filter-section {
