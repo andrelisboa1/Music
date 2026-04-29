@@ -264,7 +264,8 @@ select {
 }
 
 .filter-section {
-    min-width: 64pt;
+    border-left: 1pt solid var(--color-accent);
+    border-bottom: 1pt solid var(--color-accent);
     border-right: 1pt solid var(--color-accent);
     padding-left: 2%;
     padding-right: 2pt;
