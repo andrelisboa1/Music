@@ -249,14 +249,15 @@ select {
 .filter-bar {
     display: flex;
     flex-direction: row;
+    height: 64pt;
 }
 
 .filter-section {
     min-width: 64pt;
     border-right: 1pt solid var(--color-accent);
-    padding-left: 1pt;
-    padding-right: 1pt;
-    margin-right: 2pt;
+    padding-left: 2%;
+    padding-right: 2pt;
+    margin-right: 6pt;
 
     display: flex;
     flex-direction: row;
