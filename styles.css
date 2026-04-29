@@ -129,6 +129,7 @@ select {
 }
 
 .nav-header c{
+    background-color: var(--color-nav-background);
     font-weight: regular !important;
     font-size: calc(var(--nav-height) * 0.67);
     margin-left: 4pt;
