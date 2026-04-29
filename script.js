@@ -69,6 +69,8 @@ function applyFilterStyling() {
             summary.textContent = item.textContent;
             details.removeAttribute('open');
 
+            console.log(`Filter selected: ${item.dataset.value}`);
+
             // You can trigger your filtering logic here:
             // filterProducts(item.dataset.value);
         });
