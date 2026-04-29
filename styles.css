@@ -274,4 +274,6 @@ select {
 
     display: flex;
     flex-direction: row;
+
+    min-width: 10pt;
 }
