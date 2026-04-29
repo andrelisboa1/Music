@@ -341,11 +341,17 @@ select {
 .group {
     margin-top: 6pt;
     font-weight: bold;
-    color: var(--color-secondary);
+    color: var(--color-accent);
+    padding-bottom: 1pt;
+    border-bottom: 1pt solid var(--color-accent);
+
+    margin-bottom: 2pt;
 }
 
 .subgroup {
-    margin-left: 8pt;
     font-style: italic;
     color: var(--color-secondary);
+    border-bottom: 1pt solid var(--color-secondary);
+        margin-bottom: 2pt;
+        padding-bottom: 1pt;
 }
