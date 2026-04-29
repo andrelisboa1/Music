@@ -251,6 +251,8 @@ select {
 .filter-bar {
     display: flex;
     flex-direction: row;
+    justify-content: start;
+    align-items: start;
     vertical-align: middle;
 }
 
@@ -274,6 +276,9 @@ select {
 
     display: flex;
     flex-direction: row;
+
+    justify-content: start;
+    align-items: start;
 
     min-width: 10pt;
 }
