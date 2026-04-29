@@ -270,7 +270,7 @@ select {
     border-left: 1pt solid var(--color-accent);
     border-bottom: 1pt solid var(--color-accent);
     border-right: 1pt solid var(--color-accent);
-    padding-left: 2%;
+    padding-left: 2pt;
     padding-right: 2pt;
     margin-right: 6pt;
 
