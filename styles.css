@@ -303,7 +303,7 @@ select {
     border: 1pt solid var(--color-accent);
     border-radius: 4pt;
     margin-right: 10pt;
-    width: 200px;
+    width: 15%;
     background-color: var(--color-background-even);
 }
 
@@ -335,7 +335,7 @@ select {
 
 .filter-list div:hover {
     background-color: var(--color-accent);
-    color: var(--color-background);
+    color: var(--color-background-even);
 }
 
 .group {
