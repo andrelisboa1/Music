@@ -340,7 +340,7 @@ select {
 
 .group {
     margin-top: 6pt;
-    font-weight: bold !important;
+    font-weight: 600 !important;
     color: var(--color-secondary);
     padding-bottom: 1pt;
     border-bottom: 1pt solid var(--color-secondary);
@@ -349,9 +349,9 @@ select {
 }
 
 .subgroup {
-    font-style: italic;
+    font-weight: 500 !important;
     color: var(--color-accent);
     border-bottom: 1pt solid var(--color-accent);
-        margin-bottom: 2pt;
-        padding-bottom: 1pt;
+    margin-bottom: 2pt;
+    padding-bottom: 1pt;
 }
