@@ -189,15 +189,15 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
                     newCell.innerText = `${minutes} min, ${seconds} s`;
                     break;
                 case "Page":
-                    newCell.innerHTML = `<a href="${cellContent}" style="text-decoration: none; font-weight: normal;">View Page</a>`;
+                    newCell.innerHTML = `<a href="${cellContent}" style="text-decoration: none; font-weight: 300;">View Page</a>`;
                     newCell.onmouseenter = function(e) {
                         e.target.innerHTML = "View Page";
                         e.target.style.color = "#fff";
-                        e.target.style.fontWeight = "bold !important";
+                        e.target.style.fontWeight = "600 !important";
                     }
                     newCell.onmouseleave = function(e) {
                         e.target.innerHTML = "View Page";
-                        e.target.style.fontWeight = "normal !important";
+                        e.target.style.fontWeight = "300 !important";
                         e.target.style.color = "var(--color-main)";
                     }
                     break;
