@@ -370,12 +370,16 @@ select {
     padding: 4pt 8pt;
     margin-right: 6pt;
     cursor: pointer;
-    transition: background 0.2s, color 0.2s, font-weight 0.2s;
+    transition: border-color 0.2s, color 0.2s, font-weight 0.2s;
+
+    width: 10%;
 }
 .filter-button:hover {
-    background-color: var(--color-background);
     color: var(--color-main);
     font-weight: bold !important;
+    border-color: var(--color-main) !important;
+
+    width: 10%;
 }
 
 .filter-icon {
