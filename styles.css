@@ -128,10 +128,11 @@ select {
     align-items: center;
 }
 
-.nav-header c {
+.nav-header c{
     font-weight: regular !important;
     font-size: calc(var(--nav-height) * 0.67);
-    margin-left: 2pt;
+    margin-left: 4pt;
+    margin-right: 1pt;
 }
 
 .nav-link {
