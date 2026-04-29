@@ -23,6 +23,7 @@
     --font-size-h3: 16pt;
     --font-size-div: 14pt;
     --font-size-div-small: 12pt;
+    --font-size-div-tiny: 10pt;
 
     --nav-height: 5vh;
     --nav-inner-hpadding: 6pt;
@@ -329,6 +330,7 @@ select {
 }
 
 .filter-list div {
+    font-size: var(--font-size-div-tiny);
     padding: 2pt 4pt;
     cursor: pointer;
 }
@@ -341,6 +343,7 @@ select {
 .group {
     margin-top: 6pt;
     font-weight: 600 !important;
+    font-size: var(--font-size-div-small) !important;
     color: var(--color-secondary);
     padding-bottom: 1pt;
     border-bottom: 1pt solid var(--color-secondary);
@@ -349,6 +352,7 @@ select {
 }
 
 .subgroup {
+    font-size: var(--font-size-div-small) !important;
     font-weight: 500 !important;
     color: var(--color-accent);
     border-bottom: 1pt solid var(--color-accent);
