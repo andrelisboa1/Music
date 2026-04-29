@@ -189,8 +189,8 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
                 case "Page":
                     newCell.innerHTML = `<a href="${cellContent}" style="text-decoration: none; font-weight: 300;">View Page</a>`;
                     newCell.onmouseenter = function(e) {
-                        e.target.innerHTML = ".View Page.";
-                        e.target.style.color = "#fff";
+                        e.target.innerHTML = "View Page";
+                        e.target.style.color = "#f00";
                         e.target.style.fontWeight = "800";
                         console.log(`Mouse has entered the page link for article: ${article["Name"]}`);
                     }
