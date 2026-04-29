@@ -70,8 +70,6 @@ function applyFilterStyling() {
             summary.textContent = item.textContent;
             details.removeAttribute('open');
 
-            console.log(`Filter selected: ${item.dataset.value}`);
-
             // You can trigger your filtering logic here:
             // filterProducts(item.dataset.value);
         });
@@ -194,11 +192,13 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
                         e.target.innerHTML = "View Page";
                         e.target.style.color = "#fff";
                         e.target.style.fontWeight = "600 !important";
+                        console.log(`Mouse has entered the page link for article: ${article["Name"]}`);
                     }
                     newCell.onmouseleave = function(e) {
                         e.target.innerHTML = "View Page";
                         e.target.style.fontWeight = "300 !important";
                         e.target.style.color = "var(--color-main)";
+                        console.log(`Mouse has left the page link for article: ${article["Name"]}`);
                     }
                     break;
                 default:
