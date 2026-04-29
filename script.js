@@ -89,7 +89,7 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
         let aVal = a[sortBy];
         let bVal = b[sortBy];
 
-        // Handle Duration sorting specially
+        // special case for sorting by Duration
         if (sortBy === "Duration") {
             let aMinutes = parseInt(aVal.minutes || 0);
             let aSeconds = parseInt(aVal.seconds || 0);
@@ -108,6 +108,7 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
         return 0;
     });
 
+    // reading the proportions of the columns
     let proportions = getColumnProportions();
     let proportionTotal = 0;
     for (let proportion of proportions) {
@@ -117,6 +118,7 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
     let headerRow = document.createElement("div");
     headerRow.classList.add("product-header-row");
 
+    // for each header, header text + sorting + extra text
     let headerIndex = 0;
     for (let header of headers) {
         let newHeader = document.createElement("div");
@@ -146,6 +148,7 @@ function showProductListing(sortBy = "Name", sortDirection = "Asc") {
 
     listing.appendChild(headerRow);
 
+    // each article
     for (let article of articles) {
         let newArticle = document.createElement("div");
         newArticle.classList.add("product-cell-row");
