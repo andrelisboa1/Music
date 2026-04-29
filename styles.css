@@ -365,12 +365,17 @@ select {
 
 .filter-button {
     background-color: var(--color-nav-background);
-    color: var(--color-main);
+    color: var(--color-accent);
     border: 1pt solid var(--color-accent);
     padding: 4pt 8pt;
     margin-right: 6pt;
     cursor: pointer;
     transition: background 0.2s, color 0.2s, font-weight 0.2s;
+}
+.filter-button:hover {
+    background-color: var(--color-background);
+    color: var(--color-main);
+    font-weight: bold !important;
 }
 
 .filter-icon {
