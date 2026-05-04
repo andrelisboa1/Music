@@ -69,7 +69,8 @@ function applyFilterStyling() {
 
             console.dir(item);
 
-            summary.textContent = item.textContent;
+            // new text: data-name + ": " + text content of item
+            summary.textContent = `${details.dataset.name}: ${item.textContent}`;
             details.removeAttribute('open');
 
             // You can trigger your filtering logic here:
