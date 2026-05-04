@@ -67,6 +67,8 @@ function applyFilterStyling() {
             const details = item.closest('details');
             const summary = details.querySelector('summary');
 
+            console.dir(item);
+
             summary.textContent = item.textContent;
             details.removeAttribute('open');
 
