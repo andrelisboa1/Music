@@ -26,7 +26,7 @@
     --font-size-div-tiny: 10pt;
 
     /* Filter details font sizes */
-    --font-size-detail-header: 12pt;
+    --font-size-detail-header: 10pt;
     --font-size-detail-subheader: calc(var(--font-size-detail-header) * 0.85);
     --font-size-detail-item: calc(var(--font-size-detail-subheader) * 0.85);
 
