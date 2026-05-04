@@ -312,7 +312,7 @@ select {
 .filter-details {
     border: 1pt solid var(--color-accent);
     margin-right: 10pt;
-    width: 25%;
+    width: 20%;
     background-color: var(--color-background-even);
 }
 
