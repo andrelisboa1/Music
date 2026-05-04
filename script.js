@@ -67,7 +67,7 @@ function applyFilterStyling() {
             const details = item.closest('details');
             const summary = details.querySelector('summary');
 
-            console.dir(item);
+            console.dir(item.parentElement);
 
             // new text: data-name + ": " + text content of item
             summary.textContent = `${details.dataset.name}: ${item.textContent}`;
